@@ -13,11 +13,11 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 module.exports = {
   solidity: "0.8.17",
   networks: {
-    goerli: {
+    opgoerli: {
       url: process.env.ALCHEMY_TEST_OP_KEY,
       accounts: [process.env.PRIVATE_KEY],
     },
-    mainnet: {
+    opmainnet: {
       url: process.env.ALCHEMY_MAINNET_OP_KEY,
       accounts: [process.env.PRIVATE_KEY],
     },
